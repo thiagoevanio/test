@@ -3,27 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Teste - Login</title>
+    <title>Teste de Scroll - Login</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f0f0; }
-        /* Estilo apenas para o botão ficar bonito */
+        body { 
+            font-family: sans-serif; 
+            background-color: #f0f0f0; 
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Isso aqui cria um espaço vazio de 2000 pixels para forçar o scroll */
+        .espaco-gigante {
+            height: 2000px;
+            background: linear-gradient(to bottom, #ccc, #f0f0f0); /* Um degradê só pra vc ver a altura */
+            margin: 20px 0;
+            border: 1px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+        }
+
+        /* O estilo do botão continua o mesmo */
         #btn-entrar {
-            padding: 15px 30px;
-            font-size: 20px;
+            padding: 20px 40px;
+            font-size: 24px;
             background-color: #007bff;
             color: white;
             border: none;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
         #btn-entrar:hover { background-color: #0056b3; }
     </style>
 </head>
 <body>
 
+    <h1>Teste de Automação com Scroll</h1>
+    <p>O robô precisa descer a página para encontrar o botão.</p>
+
+    <div class="espaco-gigante">
+        Role para baixo ↓
+    </div>
+
     <a href="sucesso.html">
-        <button id="btn-entrar">ENTRAR</button>
+        <button id="btn-entrar">ENTRAR (FINAL DA PÁGINA)</button>
     </a>
+
+    <br><br><br>
 
 </body>
 </html>
